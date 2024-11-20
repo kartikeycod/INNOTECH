@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5-4-3-2-1 Grounding Exercise</title>
+    <link rel="stylesheet" href="grounding.css">
+</head>
+<body>
+    <div class="container">
+        <h1>5-4-3-2-1 Grounding Technique</h1>
+        <p id="instruction">Let's get started! Identify 5 things you can see around you.</p>
+        <input type="text" id="inputField" placeholder="Type your answer here..." />
+        <button id="nextBtn">Next</button>
+        <div id="results"></div>
+        <div id="calmingMessage" class="hidden">
+            <p>🌿 Take a deep breath. You are doing great. Remember, you are enough just as you are. 💖</p>
+        </div>
+        <button id="resetBtn" class="hidden">Restart</button>
+    </div>
+
+    <script src="grounding.js"></script>
+
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      intent="WELCOME"
+      chat-title="Relief"
+      agent-id="3ae4f5e2-86c0-44e2-9561-bf6a24028266"
+      language-code="en"
+    ></df-messenger>
+
+</body>
+</html>

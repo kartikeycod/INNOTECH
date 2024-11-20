@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breathing Exercise</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Breathing Exercise</h1>
+        <p id="instruction">Ready...</p>
+        <p id="timer">4</p>
+        <button id="startBtn">Start Exercise</button>
+        <button id="stopBtn" style="display: none;">Stop Exercise</button>
+    </div>
+
+    <canvas id="breathingCanvas"></canvas>
+
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      intent="WELCOME"
+      chat-title="Relief"
+      agent-id="3ae4f5e2-86c0-44e2-9561-bf6a24028266"
+      language-code="en"
+    ></df-messenger>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.17.1/matter.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

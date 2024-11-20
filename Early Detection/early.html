@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Assessment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="three-bg"></div>
+
+    <div class="answers">
+        <div class="container">
+            <h1>Mental Health Assessment</h1>
+            <button onclick="startQuiz()">Start Assessment</button>
+        </div>
+
+        <div id="quiz" class="hidden">
+            <form id="quizForm"></form>
+            <button onclick="submitQuiz()">Submit</button>
+        </div>
+
+        <div id="result" class="hidden">
+            <h2>Assessment Result</h2>
+            <p id="resultText"></p>
+            <button onclick="restartQuiz()">Take Again</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      intent="WELCOME"
+      chat-title="Relief"
+      agent-id="3ae4f5e2-86c0-44e2-9561-bf6a24028266"
+      language-code="en"
+    ></df-messenger>
+</body>
+</html>
